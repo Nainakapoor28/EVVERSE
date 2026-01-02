@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery - EVVerse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="EV_Verse_Logo.png" alt="EVVerse Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="battery.html" class="nav-link active">Battery</a></li>
+                <li><a href="charging.html" class="nav-link">Charging</a></li>
+                <li><a href="blogs.html" class="nav-link">Blogs</a></li>
+                <li><a href="#" class="nav-link" onclick="openContactModal(event)">Contact Us</a></li>
+                <li><a href="locate.html" class="nav-link">Locate a Charger</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <section class="page-banner">
+        <div class="placeholder" aria-label="About Banner">
+            <img src="battery.png">
+        </div>
+    </section>
+
+    <!-- About EV Batteries Section -->
+    <section class="battery-section">
+        <div class="container">
+            <h2 class="section-title">EV Batteries</h2>
+            <p class="justify-text">Electric Vehicle (EV) batteries are the heart of clean mobility — powering every drive, every kilometer, and every step toward a sustainable future. These advanced energy storage systems convert electrical energy into motion, allowing vehicles to operate efficiently without relying on fossil fuels. Unlike traditional engines, EV batteries produce zero tailpipe emissions, reducing pollution and helping build a cleaner, greener planet.</p>
+            <p class="justify-text">Beyond just powering vehicles, EV batteries symbolize the shift toward a sustainable energy ecosystem. They enable renewable energy integration, support grid stability through smart charging, and represent the innovation driving the future of transportation. By understanding how EV batteries function, we gain insight into how electric mobility merges performance with purpose—paving the way for a cleaner and smarter tomorrow.</p>
+        </div>
+    </section>
+<!-- Types of EV Batteries Section -->
+<section class="battery-section battery-types-section">
+  <div class="container">
+    <h2 class="section-title">Types of EV Batteries</h2>
+
+    <div class="battery-types-container">
+      <div class="battery-image-wrapper">
+        <div class="placeholder battery-type-image" aria-label="Battery Type Image"></div>
+      </div>
+      <div class="battery-info-box">
+        <h3 class="battery-type-title"></h3>
+        <p class="battery-type-description"></p>
+      </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="battery-nav-buttons">
+      <button class="btn btn-prev" onclick="cyclePrevBatteryType()">←</button>
+      <button class="btn btn-next" onclick="cycleNextBatteryType()">→</button>
+    </div>
+  </div>
+</section>
+
+    <!-- Battery Life Section -->
+    <section class="battery-section">
+        <div class="container">
+            <h2 class="section-title">Battery Life</h2>
+            <p class="justify-text">Battery life refers to how long an electric vehicle (EV) can perform efficiently before its capacity starts to decline. It mainly depends on two key elements — the battery cells and the Battery Management System (BMS). The cells (cylindrical, prismatic, or pouch) store and supply energy, while the BMS monitors temperature, voltage, and charge to keep them safe and efficient. Together, they ensure longer battery lifespan, better performance, and safer, more reliable electric driving.</p>
+    </section>
+
+    <!-- Tips to Maximize Battery Life Section -->
+    <section class="battery-section tips-section">
+        <div class="container">
+            <h2 class="section-title">Tips to Maximize Battery Life</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <p>Avoid extreme temperatures while charging.</p>
+                </div>
+                <div class="tip-card">
+                    <p>Keep your charge level between 20% and 80%.</p>
+                </div>
+                <div class="tip-card">
+                    <p>Regularly update your vehicle’s software.</p>
+                </div>
+                <div class="tip-card">
+                    <p>Use manufacturer-approved chargers.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeContactModal()">&times;</span>
+            <h2>Contact Us</h2>
+            <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="about.html">About Us</a>
+                <a href="battery.html">Battery</a>
+                <a href="charging.html">Charging</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="locate.html">Locate a Charger</a>
+                <a href="#" onclick="openContactModal(event)">Contact Us</a>
+            </div>
+            <p>&copy; 2025 EVVerse. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
