@@ -9,58 +9,26 @@ This project was developed as a Minor Project for the Bachelor of Computer Appli
 
 Objectives
 
-Reduce range anxiety for EV users
-Provide accurate nearest charging station recommendations
-Demonstrate the practical use of machine learning + geospatial data
-Build a complete frontend–backend integrated prototype
+Reduce range anxiety for EV users, Provide accurate nearest charging station recommendations, Demonstrate the practical use of machine learning + geospatial data, Build a complete frontend–backend integrated prototype
 
 Key Features
 
-Nearest Charging Station Recommendation using KNN
-Manual & Automatic Location Detection
-Haversine Distance Calculation for geographic accuracy
-Google Maps & Folium Map Integration
-Fallback Recommendation when no station exists in a selected city
-Informational Pages on EV batteries, charging levels, and blogs
-Responsive & Modern UI
+Nearest Charging Station Recommendation using KNN, Manual & Automatic Location Detection, Haversine Distance Calculation for geographic accuracy, Google Maps & Folium Map Integration, Fallback Recommendation when no station exists in a selected city, Informational Pages on EV batteries, charging levels, and blogs, Responsive & Modern UI
 
 Machine Learning Approach
 
-Algorithm: K-Nearest Neighbors (KNN)
-Distance Metric: Haversine Formula
-Input: Latitude & Longitude
-Output: Nearest EV charging stations ranked by distance
-The model is trained on a cleaned and normalized dataset of EV charging stations across India.
+Algorithm: K-Nearest Neighbors (KNN), Distance Metric: Haversine Formula, Input: Latitude & Longitude
+Output: Nearest EV charging stations ranked by distance, The model is trained on a cleaned and normalized dataset of EV charging stations across India.
 
 Tech Stack
 
-Backend
-
-Python 3
-Flask
-Scikit-learn
-Pandas, NumPy
-Geopy
-
-Frontend
-
-HTML5
-CSS3
-JavaScript
-
-Maps & Visualization
-
-Google Maps API
-Folium
+Backend: Python 3, Flask, Scikit-learn, Pandas, NumPy, Geopy
+Frontend: HTML5, CSS3, JavaScript
+Maps & Visualization: Google Maps API, Folium
 
 Future Enhancements
 
-Real-time charging station availability
-User login & profile system
-Online deployment (AWS / Azure)
-EV route optimization
-Ratings & reviews for charging stations
-Mobile app integration
+Real-time charging station availability, User login & profile system, Online deployment (AWS / Azure), EV route optimization, Ratings & reviews for charging stations, Mobile app integration
 
 Author
 
