@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - EVVerse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="EV_Verse_Logo.png" alt="EVVerse Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About Us</a></li>
+                <li><a href="battery.html" class="nav-link">Battery</a></li>
+                <li><a href="charging.html" class="nav-link">Charging</a></li>
+                <li><a href="blogs.html" class="nav-link">Blogs</a></li>
+                <li><a href="#" class="nav-link" onclick="openContactModal(event)">Contact Us</a></li>
+                <li><a href="locate.html" class="nav-link">Locate a Charger</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <section class="page-banner">
+        <div class="placeholder" aria-label="About Banner">
+            <img src="about.png" alt="Banner Image">
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="page-content">
+        <div class="container">
+            <h1>About EVVerse</h1>
+            <!-- added justify class to paragraph -->
+            <p class="justify-text">At EVVerse, we believe the future of mobility is electric—cleaner, smarter, and more connected. The world is rapidly moving towards sustainable transportation, and EVVerse stands at the center of this transformation, providing users with a simple yet powerful tool to make their transition to electric driving effortless. We aim to remove the uncertainty that EV owners often face by making charging information accessible, organized, and personalized for every journey.</p>
+            <p class="justify-text">Born from the idea that convenience drives adoption, EVVerse bridges the gap between EV users and the growing charging network across India. The platform is designed with accessibility and practicality at its core, allowing users to find the nearest and most compatible charging station within seconds. Every location is displayed clearly, helping users make quick and informed decisions about where to charge next. Our focus is on delivering accurate, up-to-date data that empowers EV owners to plan their routes efficiently and stress-free.</p>
+            <p class="justify-text">But EVVerse is more than just a map—it’s a companion for every EV owner. It combines location-based data, essential information about different charging types, and resources that help users better understand electric mobility. Whether you are new to electric vehicles or an experienced driver, EVVerse helps you navigate the EV ecosystem with confidence. By merging technology with education, we strive to make the EV journey simple, seamless, and sustainable.</p>
+            <p class="justify-text">With every charge tracked, every route optimized, and every connection made, EVVerse is helping to build a future where electric mobility becomes the norm. Together with our users, we aim to reduce carbon emissions, improve urban air quality, and create a connected network of cleaner, greener travel across India.</p>
+            <p class="justify-text">At EVVerse, we are not just building a platform—we are building a movement. A movement that encourages innovation, awareness, and sustainability. A movement that ensures the road ahead is bright, efficient, and emission-free.</p>
+            <p class="justify-text">Together, let’s accelerate the shift to electric—one charge at a time.</p>
+        </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeContactModal()">&times;</span>
+            <h2>Contact Us</h2>
+            <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Mission & Vision Section -->
+    <section class="mission-vision-section">
+        <div class="container">
+            <div class="mission-vision-grid">
+                <!-- Mission Card -->
+                <div class="vision-card">
+                    <h3>Our Mission</h3>
+                    <p class="justify-text">At EVVerse, our mission is to simplify and accelerate India’s transition to sustainable mobility by making electric vehicle charging effortless, accessible, and reliable for everyone. We aim to empower EV owners with real-time, location-based insights that help them find the best charging options quickly and confidently—anytime, anywhere. Through innovation, user-focused design, and data-driven precision, we strive to make every EV journey smarter, cleaner, and stress-free.</p>
+                </div>
+
+                <!-- Vision Card -->
+                <div class="vision-card">
+                    <h3>Our Vision</h3>
+                    <p class="justify-text">Our vision is to create a connected, emission-free future where electric mobility becomes the norm. We aspire to be India’s most trusted EV ecosystem companion—bridging technology, convenience, and sustainability to inspire millions to choose cleaner transportation. By merging smart data with human-centered design, EVVerse envisions a world where every charge powers a greener tomorrow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeContactModal()">&times;</span>
+            <h2>Contact Us</h2>
+            <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="about.html">About Us</a>
+                <a href="battery.html">Battery</a>
+                <a href="charging.html">Charging</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="locate.html">Locate a Charger</a>
+                <a href="#" onclick="openContactModal(event)">Contact Us</a>
+            </div>
+            <p>&copy; 2025 EVVerse. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

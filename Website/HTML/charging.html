@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charging - EVVerse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="EV_Verse_Logo.png" alt="EVVerse Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="battery.html" class="nav-link">Battery</a></li>
+                <li><a href="charging.html" class="nav-link active">Charging</a></li>
+                <li><a href="blogs.html" class="nav-link">Blogs</a></li>
+                <li><a href="#" class="nav-link" onclick="openContactModal(event)">Contact Us</a></li>
+                <li><a href="locate.html" class="nav-link">Locate a Charger</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <section class="page-banner">
+        <div class="placeholder" aria-label="Charging Banner">
+            <img src="charging.png" alt="Charging Banner">
+        </div>
+    </section>
+
+   <section class="ev-charging-section">
+    <div class="container">
+
+        <div class="ev-text-block">
+            <h2 class="ev-title">EV Charging</h2>
+
+            <p class="justify-text">EV charging is the process of supplying electrical energy to an electric vehicle’s battery so it can operate smoothly, efficiently, and reliably. From basic home charging using a standard socket to advanced high-speed DC fast chargers found along highways, EV charging offers multiple levels of convenience tailored to every driver’s routine. Whether it’s slow overnight charging, quick daily top-ups, or rapid long-distance boosts, today’s charging solutions make powering your EV easier and more flexible than ever. EV Verse adds even more value by offering clear explanations, helpful guidance, and intuitive tools that simplify the entire charging experience. With easy access to charging insights, practical tips, and user-friendly resources, EV Verse helps every EV owner understand the different charging types, choose the right options, and manage their vehicle’s energy needs with confidence.</p>
+        </div>
+        
+    <section class="ev-levels-section">
+    <h1 class="ev-title">Levels of EV Charging</h1>
+
+    <div class="ev-levels-grid">
+
+        <!-- Level 1 -->
+        <div class="ev-level-card">
+            <div class="level-img level1"></div>
+            <h3 class="level-heading">Level -1</h3>
+            <p>Slow Charging</p>
+
+            <div class="level-info-box">
+                <h4>Voltage</h4>
+                <p>Standard 15A Household Socket</p>
+
+                <h4>AMPS</h4>
+                <p>Up to 15 Amps</p>
+
+                <h4>Charging Load</h4>
+                <p>Slow Charging Speed (Ideal for Overnight Charging)</p>
+
+                <h4>Range Added</h4>
+                <p>Good for Daily Home Use / Short Commutes</p>
+            </div>
+        </div>
+
+        <!-- Level 2 -->
+        <div class="ev-level-card">
+            <div class="level-img level2"></div>
+            <h3 class="level-heading">Level -2</h3>
+            <p>Fast Charging</p>
+
+            <div class="level-info-box">
+                <h4>Voltage</h4>
+                <p>Typically 208V–240V AC</p>
+
+                <h4>AMPS</h4>
+                <p>Higher Amperage (Varies by Installation)</p>
+
+                <h4>Charging Load</h4>
+                <p>Much Faster Than Level 1(Suitable for Homes, Apartments & Workspaces)</p>
+
+                <h4>Range Added</h4>
+                <p>Significant Range in a Few Hours</p>
+            </div>
+        </div>
+
+        <!-- Level 3 -->
+        <div class="ev-level-card">
+            <div class="level-img level3"></div>
+            <h3 class="level-heading">Level - 3</h3>
+            <p>DC Fast Charging</p>
+
+            <div class="level-info-box">
+                <h4>Voltage</h4>
+                <p>High-Power DC Supply</p>
+
+                <h4>AMPS</h4>
+                <p>>Very High Amperage (Rapid Charging Output)</p>
+
+                <h4>Charging Load</h4>
+                <p>5Extremely Fast — Can Reach 80% in Under 1 Hour</p>
+
+                <h4>Range Added</h4>
+                <p>Ideal for Highways & Long-Distance Travel</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+        <h2 class="ev-title">Types of charging stations</h2>
+
+        <!-- Two Image Cards -->
+        <div class="charging-card-wrapper">
+
+            <!-- Card 1 -->
+            <div class="charging-card">
+                <div class="card-img res-image">
+                    <h3 class="card-title">Residential Charging</h3>
+                    <div class="card-overlay">
+                        <p class="justify-text">Residential chargers are designed for convenient home or apartment use, offering safe and reliable charging for your EV right where you park. They can be wall-mounted in garages or installed on stands in parking spaces, making them flexible for different home setups. With steady charging speeds, easy installation, and user-friendly operation, they are ideal for daily top-ups, overnight charging, and long-duration sessions that keep your vehicle ready every day.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="charging-card">
+                <div class="card-img pub-image">
+                    <h3 class="card-title">Public Charging</h3>
+                    <div class="card-overlay">
+                        <p class="justify-text">Public charging stations are installed at malls, dealerships, parking lots, fuel stations, commercial hubs, and key urban locations. They follow strict safety and technical standards and are typically pay-per-use. Designed for high daily usage, they support both slow and fast charging, offering convenient access for EV owners who need to charge while shopping, working, or traveling. These stations ensure reliable, accessible, and efficient charging for all types of EV users on the go.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeContactModal()">&times;</span>
+            <h2>Contact Us</h2>
+            <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="about.html">About Us</a>
+                <a href="battery.html">Battery</a>
+                <a href="charging.html">Charging</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="locate.html">Locate a Charger</a>
+                <a href="#" onclick="openContactModal(event)">Contact Us</a>
+            </div>
+            <p>&copy; 2025 EVVerse. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

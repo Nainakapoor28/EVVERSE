@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs - EVVerse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="EV_Verse_Logo.png" alt="EVVerse Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="battery.html" class="nav-link">Battery</a></li>
+                <li><a href="charging.html" class="nav-link">Charging</a></li>
+                <li><a href="blogs.html" class="nav-link active">Blogs</a></li>
+                <li><a href="#" class="nav-link" onclick="openContactModal(event)">Contact Us</a></li>
+                <li><a href="locate.html" class="nav-link">Locate a Charger</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blogs Section -->
+    <section class="page-content">
+        <div class="container">
+            <h1>Latest Blogs</h1>
+            <div class="blogs-grid">
+                <div class="blog-card">
+                    <div class="placeholder blog-image" aria-label="Blog 1 Image">
+                        <img src="blog1.jpeg" alt="Blog Image">
+                    </div>
+                    <h3>EV Charging in India: The Road Ahead</h3>
+                    <p class="justift-text">India is entering a significant phase in its shift toward electric mobility.</p>
+                    <a href="blog1.html" class="btn btn-primary">Read More</a>
+                </div>
+                <div class="blog-card">
+                    <div class="placeholder blog-image" aria-label="Blog 2 Image">
+                         <img src="blog2.webp" alt="Blog Image">
+                    </div>
+                    <h3>Fast vs Slow Charging — What's Best for You?</h3>
+                    <p class="justift-text">As electric vehicles become increasingly popular, many new EV owners often wonder</p>
+                    <a href="blog2.html" class="btn btn-primary">Read More</a>
+                </div>
+                <div class="blog-card">
+                    <div class="placeholder blog-image" aria-label="Blog 3 Image">
+                        <img src="blog3.jpeg" alt="Blog Image">
+                    </div>
+                    <h3>Planning Your First EV Trip</h3>
+                    <p class="justift-text">Taking your electric vehicle (EV) on a long journey for the first time is exciting</p>
+                    <a href="blog3.html" class="btn btn-primary">Read More</a>
+                </div>
+                <div class="blog-card">
+                    <div class="placeholder blog-image" aria-label="Blog 4 Image">
+                        <img src="blog4.webp" alt="Blog Image">
+                    </div>
+                    <h3>Battery Health Myths Explained</h3>
+                    <p class="justift-text">As electric vehicles (EVs) become more common, so do the doubts and misunderstandings </p>
+                    <a href="blog4.html" class="btn btn-primary">Read More</a>
+                </div>
+                <div class="blog-card">
+                    <div class="placeholder blog-image" aria-label="Blog 5 Image">
+                        <img src="pub.jpg" alt="Blog Image">
+                    </div>
+                    <h3>Public vs Private Charging — Which Works Better?</h3>
+                    <p class="justift-text">As electric vehicles continue to grow in popularity, one of the biggest questions</p>
+                    <a href="blog5.html" class="btn btn-primary">Read More</a>
+                </div>
+                <div class="blog-card">
+                    <div class="placeholder blog-image" aria-label="Blog 6 Image">
+                        <img src="blog6.png" alt="Blog Image">
+                    </div>
+                    <h3>Top 5 Cities Leading India's EV Revolution</h3>
+                    <p class="justift-text">India’s shift toward electric mobility is growing rapidly, and several cities are playing a major role</p>
+                    <a href="blog6.html" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeContactModal()">&times;</span>
+            <h2>Contact Us</h2>
+            <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="about.html">About Us</a>
+                <a href="battery.html">Battery</a>
+                <a href="charging.html">Charging</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="locate.html">Locate a Charger</a>
+                <a href="#" onclick="openContactModal(event)">Contact Us</a>
+            </div>
+            <p>&copy; 2025 EVVerse. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
