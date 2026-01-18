@@ -32,7 +32,7 @@ Real-time charging station availability, User login & profile system, Online dep
 
 Author
 
-Naina Kapoor
+Naina Kapoor, Suprit Kaur
 Bachelor of Computer Applications (BCA)
 Vivekananda Institute of Professional Studies – Technical Campus
 Guru Gobind Singh Indraprastha University
