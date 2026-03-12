@@ -24,7 +24,7 @@ knn.fit(X_rad)
 
 os.makedirs("data", exist_ok=True)
 pickle.dump((knn, df), open("data/knn_ev_model.pkl", "wb"))
-print("✅ Model trained and saved as data/knn_ev_model.pkl with cleaned data.")
+print("Model trained and saved as data/knn_ev_model.pkl with cleaned data.")
 
 def evaluate_knn_model(knn, df):
     X = df[["latitude", "longitude"]].to_numpy()
@@ -40,7 +40,7 @@ def evaluate_knn_model(knn, df):
             correct += 1
 
     accuracy = correct / total * 100
-    print(f"📊 KNN Spatial Self-Consistency Accuracy: {accuracy:.2f}%")
+    print(f"KNN Spatial Self-Consistency Accuracy: {accuracy:.2f}%")
 
 evaluate_knn_model(knn, df)
 
@@ -52,7 +52,7 @@ def evaluate_distance_error(knn, df):
     distances, indices = knn.kneighbors(X_rad, n_neighbors=1)
 
     avg_error = distances.mean() * 6371  
-    print(f"📏 Average distance error: {avg_error:.4f} km")
+    print(f"Average distance error: {avg_error:.4f} km")
 
 evaluate_distance_error(knn, df)
 
@@ -61,10 +61,10 @@ def geocode_location(city, state=None, area=None):
     query = f"{area or ''}, {city}, {state or ''}, India"
     location = geolocator.geocode(query, timeout=10)
     if location:
-        print(f"📍 Found location: {location.address}")
+        print(f"Found location: {location.address}")
         return location.latitude, location.longitude
     else:
-        print("❌ Could not find coordinates for the provided location.")
+        print("Could not find coordinates for the provided location.")
         return None, None
 
 def recommend_stations_by_location(city, state=None, area=None, n=10):
@@ -91,7 +91,7 @@ def recommend_stations_by_location(city, state=None, area=None, n=10):
     return pd.DataFrame(results)
 
 if __name__ == '__main__':
-    print("\n⚡ EV Station Recommender ⚡")
+    print("\nEV Station Recommender ")
     city = input("Enter your city: ").strip()
     state = input("Enter your state (optional): ").strip() or None
     area = input("Enter area or landmark (optional): ").strip() or None
@@ -102,4 +102,5 @@ if __name__ == '__main__':
         print("\nTop 10 nearby EV stations:\n")
         print(recommendations.to_string(index=False))
     else:
-        print("\n❌ No results found. Try a different location.")
+        print("\nNo results found. Try a different location.")
+
